@@ -9,6 +9,30 @@ for Linux
 ```
 sudo apt-get install unar
 ```
+## Setup
+Reproducing this source https://github.com/FedML-AI/FedML/tree/master/app/fediot/anomaly_detection_for_cybersecurity
+
+Must be conda env python >= 3.8
+
+```
+conda create -n fedml python=3.8
+conda activate fedml
+```
+
+Install FedML version 0.7.98 (instal from source) -> does not work
+
+```
+git clone https://github.com/FedML-AI/FedML.git && \
+cd ./FedML/python && \
+python setup.py install
+```
+-> should install using 
+```
+pip install fedml==0.7.98
+```
+Git clone https://github.com/FedML-AI/FedML.git
+Link to https://github.com/FedML-AI/FedML/tree/master/app/fediot/anomaly_detection_for_cybersecurity
+Run
 
 ## Real-deployment Training Script
 
@@ -46,14 +70,4 @@ sh run_simulation.sh 9
 ```
 9 in the above script represents the number of parallel clients, which should be identical to the worker_num inside config_simulation/fedml_config.yaml.
 
-## A Better User-experience with FedML MLOps (open.fedml.ai)
-To reduce the difficulty and complexity of these CLI commands. We recommend you to use our MLOps (open.fedml.ai).
-FedML MLOps provides:
-- Install Client Agent and Login
-- Inviting Collaborators and group management
-- Project Management
-- Experiment Tracking (visualizing training results)
-- monitoring device status
-- visualizing system performance (including profiling flow chart)
-- distributed logging
-- model serving
+
