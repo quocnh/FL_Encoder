@@ -1,3 +1,5 @@
+
+![viewer](https://github.com/quocnh/FL_Encoder/blob/main/Screen%20Shot%202022-07-26%20at%2010.06.46%20PM.png)
 ## Prerequisite
 Install command line tool `unar`: 
 
